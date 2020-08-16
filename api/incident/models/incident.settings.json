@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "incidents",
+  "info": {
+    "name": "incident"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "author": {
+      "type": "string",
+      "default": "Anonimowy użytkownik"
+    },
+    "message": {
+      "type": "text",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 250
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "comments": {
+      "via": "incident",
+      "collection": "comment"
+    }
+  }
+}

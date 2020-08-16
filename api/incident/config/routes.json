@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/incidents",
+      "handler": "incident.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/incidents/count",
+      "handler": "incident.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/incidents/:id",
+      "handler": "incident.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/incidents",
+      "handler": "incident.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/incidents/:id",
+      "handler": "incident.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/incidents/:id",
+      "handler": "incident.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/incidents/:id/comment",
+      "handler": "incident.commentFind",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/incidents/:id/comment",
+      "handler": "incident.comment",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
