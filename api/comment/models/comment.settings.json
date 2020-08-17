@@ -11,11 +11,10 @@
   "attributes": {
     "author": {
       "type": "string",
-      "default": "Anonimowy użytkownik"
+      "default": "Anonim"
     },
     "content": {
-      "type": "text",
-      "required": true
+      "type": "text"
     },
     "incident": {
       "model": "incident",

@@ -47,22 +47,6 @@
       "config": {
         "policies": []
       }
-    },
-    {
-      "method": "GET",
-      "path": "/incidents/:id/comment",
-      "handler": "incident.commentFind",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/incidents/:id/comment",
-      "handler": "incident.comment",
-      "config": {
-        "policies": []
-      }
     }
   ]
 }
